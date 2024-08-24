@@ -16,11 +16,11 @@ def main():
     clock = pygame.time.Clock()  # create a clock object
 
     if RUN_ON_FULLSCREEN:  # check if fullscreen mode is enabled
-        screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+        screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)  # run in fullscreen mode
 
     else:
         print(SCREEN_SIZE)
-        screen = pygame.display.set_mode(SCREEN_SIZE)
+        screen = pygame.display.set_mode(SCREEN_SIZE)  # use the screen size from the consts file
 
     pygame.display.set_caption("Exhibit")  # set the caption
 
