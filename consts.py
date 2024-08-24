@@ -10,11 +10,11 @@ from pygame.locals import *
 # pictures related settings
 MAX_PICTURES = 10  # number of pictures that will be displayed in idle mode
 PICTURES_FOLDER = "/home/dell/pictures"  # folder where the pictures are saved
-PICTURE_DURATION = 1  # seconds per picture in idle mode
+PICTURE_DURATION = 10  # seconds per picture in idle mode
 CAMERA_INDEX = 4  # camera index to use (0 is the default camera), 4 is the USB camera (if not working, try 0, 1, 2, 3)
 
 # idle mode settings
-IDLE_TIME = 4  # seconds until idle mode (cycle through pictures)
+IDLE_TIME = 180  # seconds until idle mode (cycle through pictures)
 
 # screen settings
 RUN_ON_FULLSCREEN = True  # run in fullscreen mode
