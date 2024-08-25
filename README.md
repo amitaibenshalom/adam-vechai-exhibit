@@ -7,3 +7,5 @@ cd adam-vechai-exhibit
 pip3 install -r requirements.txt
 python3 main.py
 ```
+
+Or you can click to on the **program-exhibit.desktop** launcher  
