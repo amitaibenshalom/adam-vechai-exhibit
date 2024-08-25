@@ -25,5 +25,5 @@ TAKE_PICTURE_KEY = pygame.K_0  # key to take a picture (0) - DO NOT CHANGE
 EXIT_KEY = pygame.K_ESCAPE  # key to exit the program (ESC)
 
 # error settings
-DEFAULT_PICTURE = "./default/error.png"  # picture to display when no pictures are found
-CAMERA_ERROR = "./default/camera_error.png"  # picture to display when camera is not found
+DEFAULT_PICTURE = "/home/dell/adam-vechai-exhibit/default/error.png"  # picture to display when no pictures are found
+CAMERA_ERROR = "/home/dell/adam-vechai-exhibit/default/camera_error.png"  # picture to display when camera is not found

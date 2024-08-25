@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Program exhibit
+Exec=python3 /home/dell/adam-vechai-exhibit/main.py
+Icon=/home/dell/Pictures/script.png
+Terminal=true
+Type=Application
+Categories=Utility;
