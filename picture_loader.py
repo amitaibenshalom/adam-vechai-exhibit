@@ -78,6 +78,8 @@ class PictureLoader:
         """
         Display the picture on the screen based on the current mode (idle or not)
         """
+        self.check_idle()  # check if the program is in idle mode
+
         if not self.check_pictures_folder():  # check if there are any pictures in the folder
             self.load_default_picture()  # load the default picture
             return
@@ -86,8 +88,6 @@ class PictureLoader:
             self.load_camera_error()  # load the camera error picture
             return
         
-        self.check_idle()  # check if the program is in idle mode
-
         if not self.idle:
             self.load_latest_picture()  # load the latest picture
             return
@@ -119,6 +119,7 @@ class PictureLoader:
 
         if current_time - self.last_picture_time > IDLE_TIME:  # check if the program needs to go into idle mode
             self.idle = True  # turn on idle mode
+            self.camera_error = False  # turn off camera error flag
 
         else:
             self.idle = False  # turn off idle mode
