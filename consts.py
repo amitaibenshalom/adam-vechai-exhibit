@@ -9,7 +9,7 @@ from pygame.locals import *
 
 # pictures related settings
 MAX_PICTURES = 25  # number of pictures that will be displayed in idle mode
-PICTURES_FOLDER = "/home/dell/pictures"  # folder where the pictures are saved
+PICTURES_FOLDER = "/home/dell/exhibit-pictures"  # folder where the pictures are saved
 PICTURE_DURATION = 10  # seconds per picture in idle mode
 CAMERA_INDEX = 0  # camera index to use (0 is the default camera) (if not working, try 0, 1, 2, 3)
 
@@ -27,3 +27,4 @@ EXIT_KEY = pygame.K_ESCAPE  # key to exit the program (ESC)
 # error settings
 DEFAULT_PICTURE = "/home/dell/adam-vechai-exhibit/default/error.png"  # picture to display when no pictures are found
 CAMERA_ERROR = "/home/dell/adam-vechai-exhibit/default/camera_error.png"  # picture to display when camera is not found
+NON_VALID_FORMAT_PICTURE_ERROR = "/home/dell/adam-vechai-exhibit/default/non_valid_format_error.png"  # picture to display when the all picture formats is not valid

@@ -55,9 +55,10 @@ def main():
                     
                     pictureLoader.last_picture_time = time.time()  # update the last picture time
                     pictureLoader.picture_index = 0  # reset the picture index if needed
-
+        
         camera.take_picture(PICTURES_FOLDER, save=False)  # take a picture but do not save it (must do this to clear the buffer of the camera)
         pictureLoader.screen.fill((0, 0, 0))
+        pictureLoader.move_non_valid_format_pictures()  # move non valid format pictures to a different folder (safety measure)
         pictureLoader.display_picture()  # display the picture on the screen based on the current mode (idle or not)
         pygame.display.update()  # actually update the display
         clock.tick(60)  # limit the frame rate to 60 FPS
