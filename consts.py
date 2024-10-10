@@ -8,7 +8,7 @@ import pygame
 from pygame.locals import *
 
 # pictures related settings
-MAX_PICTURES = 10  # number of pictures that will be displayed in idle mode
+MAX_PICTURES = 25  # number of pictures that will be displayed in idle mode
 PICTURES_FOLDER = "/home/dell/pictures"  # folder where the pictures are saved
 PICTURE_DURATION = 10  # seconds per picture in idle mode
 CAMERA_INDEX = 0  # camera index to use (0 is the default camera) (if not working, try 0, 1, 2, 3)
